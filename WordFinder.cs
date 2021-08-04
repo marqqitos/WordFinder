@@ -92,7 +92,7 @@ namespace WordFinder
 
         private IEnumerable<string> GetTop10FoundWords()
         {
-            return wordsThatHaveBeenFound.OrderByDescending(kv => kv.Value).Take(10).Select(kv => kv.Key)
+            return wordsThatHaveBeenFound.OrderByDescending(kv => kv.Value).Take(10).Select(kv => kv.Key);
         }
     }
 }
